@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(0, 9, 58);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+} 
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+.nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+/* End Of Navigation Css*/
+
+body {
+	background-color: #f8fafc;
+}
+
+.container {
+	padding: 0;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: fit-content;
+	max-height: fit-content;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0%;
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
+}
+
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+	
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+/* End Of Slider Code*/
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0%;
+}
+
+
+
+.container1 {
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap ;
+}
+
+.card {
+	background: white;
+	width: 220px;
+	margin: 10px;
+	border-radius: 15px 15px 0 0;
+}
+
+.card-image {
+	background-color: gray;
+	height: 150px;
+	margin-top: 15px;
+	background-size: cover;
+
+}
+.depressed-1 {
+	background-image: url('https://media.istockphoto.com/id/1308753258/photo/loneliness-teenage-girls.jpg?s=170667a&w=0&k=20&c=qL9Cz6Spj782Fg2dxBsNDxBhe0MjC2l3pRCAIgdTPYs=');
+}
+
+.depressed-2 {
+	background-image: url('https://thumbs.dreamstime.com/b/side-view-portrait-sad-depressed-black-man-sitting-bench-park-sad-depressed-black-man-bench-park-177762638.jpg')
+}
+.depressed-3 {
+	background-image: url('https://freerangestock.com/sample/140884/depressed-man--adult-depression.jpg');
+}
+.depressed-4 {
+	background-image: url('https://th.bing.com/th/id/OIP.ymrSs2nvmMBtj9y3O1QI8wHaKD?pid=ImgDet&rs=1');
+}
+.depressed-5 {
+	background-image: url('https://th.bing.com/th/id/OIP.FyjRoA1Iq_5g_4j7WH6bqwHaGI?pid=ImgDet&rs=1');
+}
+.card h2 {
+	padding: 10px;
+}
+
+.card p {
+	padding: 10px;
+}
+
+.card a {
+	background-color: black;
+	color: white;
+	padding: 15px 20px;
+	display: block;
+	text-align: center;
+	margin: 20px 50px;
+
+}
+.card:hover {
+	background-color: rgb(62, 62, 62);
+	color: white;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+  input[type=submit] {
+	background-color: rgb(0, 9, 58);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: rgb(0, 9, 58);
+  }
+  
+  /* Style the container/contact section */
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+
+  #navbar {
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+	padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+	padding-top: 60px;
+  }
